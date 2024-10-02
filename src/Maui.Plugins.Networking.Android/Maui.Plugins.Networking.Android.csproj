@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android</TargetFrameworks>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<PackageId>Maui.Networking.Android</PackageId>
+		<Version>1.0.0</Version>
+		<Description>This Library provides useful Netwokring tools to use for Android in .NET MAUI application.</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/yourrepo</RepositoryUrl>
+		<PackageTags>MAUI</PackageTags>
+		<RepositoryType>git</RepositoryType>
+		<Authors>David Melkumyan</Authors>
+		<Product>MauiNetworking</Product>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<OutputType>Library</OutputType>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Update="icon.png">
+			<Pack>True</Pack>
+			<PackagePath>icon.png</PackagePath>
+		</None>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>README.md</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Maui.Plugins.Networking.Java\Maui.Plugins.Networking.Java.csproj" />
+	</ItemGroup>
+
+</Project>

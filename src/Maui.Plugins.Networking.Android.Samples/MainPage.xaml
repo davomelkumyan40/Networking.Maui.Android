@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Maui.Plugins.Networking.Android.Samples"
+             x:DataType="local:MainPage"
+             x:Class="Maui.Plugins.Networking.Android.Samples.MainPage">
+    <Grid RowDefinitions="Auto,100,*"
+          RowSpacing="10"
+          ColumnDefinitions="*,*,*"
+          Padding="15">
+        <VerticalStackLayout Grid.ColumnSpan="3">
+            <Label Text="IP Address or Hostname"
+                   Margin="3,0,0,0"
+                   FontSize="12"/>
+            <Entry Placeholder="Ip Address" 
+                   FontSize="16"
+                   Text="192.168.1.53"
+                   x:Name="ipText"/>
+        </VerticalStackLayout>
+        <FlexLayout Grid.Row="1"
+                    Wrap="Wrap"
+                    JustifyContent="Start"
+                    Grid.ColumnSpan="3"
+                    Grid.Column="0">
+            <Button FontAttributes="Bold"
+                    MinimumWidthRequest="80"
+                    Padding="10,0"
+                    Margin="0,0,5,10"
+                    x:Name="PingBtn"
+                    Text="PING"/>
+            <Button FontAttributes="Bold"
+                    MinimumWidthRequest="80"
+                    Margin="0,0,5,10"
+                    Padding="10,0"
+                    x:Name="WakeOnLanBtn"
+                    Text="WAKE ON LAN"/>
+            <Button FontAttributes="Bold"
+                    MinimumWidthRequest="80"
+                    Margin="0,0,5,10"
+                    Padding="15,0"
+                    x:Name="PortScanBtn"
+                    Text="PORT SCAN"/>
+            <Button FontAttributes="Bold"
+                    MinimumWidthRequest="80"
+                    Margin="0,0,5,10"
+                    Padding="15,0"
+                    x:Name="SubnetDevicesBtn"
+                    Text="SUBNET DEVICES"/>
+            <Button FontAttributes="Bold"
+                    MinimumWidthRequest="80"
+                    Margin="0,0,5,10"
+                    Padding="15,0"
+                    x:Name="MacAddressBtn"
+                    Text="MAC ADDRESS"/>
+        </FlexLayout>
+        <ScrollView  Grid.Row="2"
+                     Grid.ColumnSpan="3"
+                    Grid.Column="0">
+            <Label x:Name="ConsoleDisplay" 
+                    FontSize="13"
+                    TextColor="{StaticResource Gray200}" />
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
