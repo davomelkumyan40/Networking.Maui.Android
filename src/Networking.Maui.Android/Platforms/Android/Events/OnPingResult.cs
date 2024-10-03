@@ -1,13 +1,13 @@
 ﻿using Com.Stealthcopter.Networktools.Pinglib;
 using static Com.Stealthcopter.Networktools.Ping;
-using PingAttempt = Maui.Plugins.Networking.Android.Models.PingAttempt;
+using PingAttempt = Networking.Maui.Android.Models.PingAttempt;
 using JavaPingResult = Com.Stealthcopter.Networktools.Pinglib.PingResult;
 using JavaObject = Java.Lang.Object;
 using JavaException = Java.Lang.Exception;
-using PingResult = Maui.Plugins.Networking.Android.Models.PingResult;
+using PingResult = Networking.Maui.Android.Models.PingResult;
 using System.Collections.Concurrent;
 
-namespace Maui.Plugins.Networking.Android.Events;
+namespace Networking.Maui.Android.Events;
 
 internal class OnPingResult : JavaObject, IPingListener
 {

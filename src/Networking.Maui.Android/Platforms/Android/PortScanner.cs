@@ -1,10 +1,10 @@
 ﻿using Com.Stealthcopter.Networktools;
 using JPortScan = Com.Stealthcopter.Networktools.PortScan;
-using Maui.Plugins.Networking.Android.AsyncEvents;
+using Networking.Maui.Android.AsyncEvents;
 using Integer = Java.Lang.Integer;
-using Maui.Plugins.Networking.Android.Enums;
+using Networking.Maui.Android.Enums;
 
-namespace Maui.Plugins.Networking.Android;
+namespace Networking.Maui.Android;
 
 public class PortScanner
 {

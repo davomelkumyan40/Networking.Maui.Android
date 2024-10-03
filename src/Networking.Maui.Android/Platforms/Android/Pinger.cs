@@ -1,9 +1,9 @@
-﻿using Maui.Plugins.Networking.Android.AsyncEvents;
-using Maui.Plugins.Networking.Android.Events;
-using PingAttempt = Maui.Plugins.Networking.Android.Models.PingAttempt;
-using PingResult = Maui.Plugins.Networking.Android.Models.PingResult;
+﻿using Networking.Maui.Android.AsyncEvents;
+using Networking.Maui.Android.Events;
+using PingAttempt = Networking.Maui.Android.Models.PingAttempt;
+using PingResult = Networking.Maui.Android.Models.PingResult;
 
-namespace Maui.Plugins.Networking.Android;
+namespace Networking.Maui.Android;
 
 public class Pinger
 {

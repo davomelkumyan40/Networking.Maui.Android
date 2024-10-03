@@ -1,5 +1,5 @@
 ﻿
-namespace Maui.Plugins.Networking.Android.Models;
+namespace Networking.Maui.Android.Models;
 
 public class Device
 {

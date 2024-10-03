@@ -3,7 +3,7 @@ using IPortListener = Com.Stealthcopter.Networktools.PortScan.IPortListener;
 using JavaObject = Java.Lang.Object;
 using JavaException = Java.Lang.Exception;
 
-namespace Maui.Plugins.Networking.Android.AsyncEvents;
+namespace Networking.Maui.Android.AsyncEvents;
 
 internal class OnPortScanResultAsync : AsyncEventTask<IEnumerable<int>>, IPortListener
 {

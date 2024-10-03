@@ -1,4 +1,8 @@
-﻿using System.Collections.ObjectModel;
+﻿#if ANDROID
+using Networking.Maui.Android;
+using Networking.Maui.Android.Enums;
+#endif
+using System.Collections.ObjectModel;
 using System.Net;
 using System.Text;
 
@@ -79,7 +83,7 @@ public partial class MainPage : ContentPage
         {
 #if ANDROID
             //Search specific ports
-            var foundPorts = await PortScanner.Instance.ScanAsync(ipText.Text, [10, 20, 80, 90], 1000, Enums.TransportType.Tcp);
+            var foundPorts = await PortScanner.Instance.ScanAsync(ipText.Text, [10, 20, 80, 90], 1000, TransportType.Tcp);
             //Search all available ports
             //var foundPorts = await PortScanner.Instance.ScanAsync(ipText.Text, null, 1000, Enums.TransportType.Tcp);
 
@@ -112,7 +116,7 @@ public partial class MainPage : ContentPage
 #if ANDROID
             ConsoleWriter.WriteLine("Searching...");
             //Search specific ports
-            var foundPorts = await PortScanner.Instance.ScanAsync(ipText.Text, [10, 20, 80, 90], 1000, Enums.TransportType.Tcp);
+            var foundPorts = await PortScanner.Instance.ScanAsync(ipText.Text, [10, 20, 80, 90], 1000, TransportType.Tcp);
             //Search all available ports
             //var foundPorts = await PortScanner.Instance.ScanAsync(ipText.Text, null, 1000, Enums.TransportType.Tcp);
 

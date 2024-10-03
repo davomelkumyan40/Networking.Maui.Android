@@ -4,7 +4,7 @@ using Java.IO;
 using InetAddress = Java.Net.InetAddress;
 using Runtime = Java.Lang.Runtime;
 
-namespace Maui.Plugins.Networking.Android;
+namespace Networking.Maui.Android;
 
 public static class NetworkUtils
 {

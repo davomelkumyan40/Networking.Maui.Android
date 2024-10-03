@@ -2,9 +2,9 @@
 using JavaObject = Java.Lang.Object;
 using JavaException = Java.Lang.Exception;
 using JDevice = Com.Stealthcopter.Networktools.Subnet.Device;
-using Device = Maui.Plugins.Networking.Android.Models.Device;
+using Device = Networking.Maui.Android.Models.Device;
 
-namespace Maui.Plugins.Networking.Android.AsyncEvents;
+namespace Networking.Maui.Android.AsyncEvents;
 
 internal class OnSubnetDeviceResultAsync : AsyncEventTask<IEnumerable<Device>>, IOnSubnetDeviceFound
 {

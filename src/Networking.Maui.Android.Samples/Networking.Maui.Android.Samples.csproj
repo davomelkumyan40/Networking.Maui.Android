@@ -15,7 +15,7 @@
 		<ApplicationTitle>Maui.Plugins.Networking.Android.Samples</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.maui.plugins.networking.android.samples</ApplicationId>
+		<ApplicationId>networking.maui.android.samples</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -54,7 +54,7 @@
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)|$(Platform)'=='net8.0-android|AnyCPU'">
-	  <ProjectReference Include="..\Maui.Plugins.Networking.Android\Maui.Plugins.Networking.Android.csproj" />
+	  <ProjectReference Include="..\Networking.Maui.Android\Networking.Maui.Android.csproj" />
 	</ItemGroup>
 
 </Project>

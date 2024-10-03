@@ -1,8 +1,8 @@
 ﻿using Com.Stealthcopter.Networktools;
-using Maui.Plugins.Networking.Android.AsyncEvents;
-using Device = Maui.Plugins.Networking.Android.Models.Device;
+using Networking.Maui.Android.AsyncEvents;
+using Device = Networking.Maui.Android.Models.Device;
 
-namespace Maui.Plugins.Networking.Android;
+namespace Networking.Maui.Android;
 
 
 public class SubnetScanner

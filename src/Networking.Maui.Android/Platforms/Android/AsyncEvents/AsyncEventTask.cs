@@ -1,6 +1,6 @@
 ﻿using JavaObject = Java.Lang.Object;
 
-namespace Maui.Plugins.Networking.Android.AsyncEvents;
+namespace Networking.Maui.Android.AsyncEvents;
 
 internal class AsyncEventTask<T> : JavaObject
 {

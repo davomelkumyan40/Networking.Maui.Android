@@ -1,5 +1,5 @@
 ﻿
-namespace Maui.Plugins.Networking.Android.Enums;
+namespace Networking.Maui.Android.Enums;
 
 public enum TransportType
 {
