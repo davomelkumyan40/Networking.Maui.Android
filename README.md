@@ -23,7 +23,7 @@
 * Wake-On-Lan
 
 ## Getting Started
-- Install Nuget package [![NuGet Badge](https://img.shields.io/nuget/v/YourPackageId.svg)](https://www.nuget.org/packages/YourPackageId)
+- Install Nuget package [![NuGet Badge](https://img.shields.io/nuget/v/YourPackageId.svg)](https://www.nuget.org/packages/Networking.Maui.Android)
 OR
 - You can install the library via NuGet:
 
