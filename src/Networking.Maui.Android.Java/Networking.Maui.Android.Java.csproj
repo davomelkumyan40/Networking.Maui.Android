@@ -23,6 +23,11 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath="" />
+		<None Include="../../README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+
 
 	<ItemGroup Condition="$(TargetFramework.Contains('-android'))">
 		<EmbeddedJar Include="Jars\library.jar" />
