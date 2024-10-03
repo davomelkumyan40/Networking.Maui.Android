@@ -1,6 +1,6 @@
 # Networking.Maui.Android
 
-[![NuGet Badge](https://img.shields.io/nuget/v/YourPackageId.svg)](https://www.nuget.org/packages/Networking.Maui.Android)
+[![NuGet Badge](https://img.shields.io/nuget/v/Networking.Maui.Android.svg)](https://www.nuget.org/packages/Networking.Maui.Android)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
 **Networking.Maui.Android** is a .NET MAUI library that provides useful Netwokring tools to use for Android in your application. This library is build in base of another Java library (**AndroidNetworkTools** [link to repo](https://github.com/stealthcopter/AndroidNetworkTools)) in order to simplify Networking in .NET MAUI. feel free to fork and add your features to the project by creating pull request on it.
@@ -17,24 +17,29 @@
 - Easy access to Networking of Andoird
 - Simple API for fast usage.
 - Java native code behind
-* Port Scanning
-* Subnet Device Finder (discovers devices on local network)
-* Ping
-* Wake-On-Lan
+- **Main Functionality**
+- Port Scanning
+- Subnet Device Finder (discovers devices on local network)
+- Ping
+- Wake-On-Lan
 
 ## Getting Started
-- Install Nuget package [![NuGet Badge](https://img.shields.io/nuget/v/YourPackageId.svg)](https://www.nuget.org/packages/Networking.Maui.Android)
+- Install Nuget package [![NuGet Badge](https://img.shields.io/nuget/v/Networking.Maui.Android.svg)](https://www.nuget.org/packages/Networking.Maui.Android)
+
 OR
+
 - You can install the library via NuGet:
+
+## Installation
 
 **.NET CLI**
 ```bash
-dotnet add package Maui.Networking.Android
+dotnet add package Networking.Maui.Android
 ```
 
 **Package Manager Console**
 ```bash
-NuGet\Install-Package Maui.Networking.Android
+NuGet\Install-Package Networking.Maui.Android
 ```
 
 ### Prerequisites
@@ -102,3 +107,6 @@ git commit -am 'feature to approve'
 git push origin my-new-feature
 ```
 5) Create new Pull Request
+
+## License
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
